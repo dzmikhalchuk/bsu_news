@@ -1,0 +1,11 @@
+commit 37cd22dd8863a0feeaac32ed16dc5dd8812fc641
+Author: dzmikhalchuk <dzmikhalchuk@exadel.com>
+Date:   Tue Feb 14 14:30:24 2017 +0300
+
+    add status.txt
+
+commit a34cfb55b0252c5e2f7064b2c08e9bb1bb8b7ffb
+Author: dzmikhalchuk <dzmikhalchuk@exadel.com>
+Date:   Tue Feb 14 14:28:27 2017 +0300
+
+    add .gitignore
