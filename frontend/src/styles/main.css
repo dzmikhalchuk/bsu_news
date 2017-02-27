@@ -247,7 +247,7 @@ a {
     }
 }
 
-@media screen and (mix-width: 993px) and (max-width: 1070px) {
+@media screen and (min-width: 993px) and (max-width: 1070px) {
     .container .cols.col-3 {
         width: 50%;
     }
