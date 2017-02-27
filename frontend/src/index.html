@@ -11,9 +11,10 @@
 <header class="header">
     <div class="header-wrapper">
         <span class="header-title">FOOTBALL NEWS</span>
+        <span class="header-title-sm">FN</span>
         <ul>
             <li>
-                <span class="fa fa-search" aria-hidden="true"></span>
+                <a class="fa fa-search" aria-hidden="true" href="#"></a>
             </li>
             <li>
                 <a class="fa fa-plus-square-o" aria-hidden="true" href="#"></a>
@@ -30,21 +31,21 @@
 <div class="filter">
     <div class="filter-wrapper">
         <form>
-            <select class="select-author" name="" id="">
-                <option value="asdasdas" disabled selected>select author</option>
-                <option value="asdasdas">new author</option>
-                <option value="dasdasd">another author</option>
+            <select class="select-author" name="author">
+                <option value="null" disabled selected>select author</option>
+                <option value="new author">new author</option>
+                <option value="another author">another author</option>
             </select>
-            <select class="select-date" name="datefrom" id="">
-                <option value="asdasdas" disabled selected>from</option>
+            <select class="select-date" name="datefrom">
+                <option disabled selected>from</option>
             </select>
-            <select class="select-date" name="dateto" id="">
-                <option value="asdasdas" disabled selected>to</option>
+            <select class="select-date" name="dateto">
+                <option disabled selected>to</option>
             </select>
-            <select class="select-tag" name="dateto" id="">
-                <option value="asdasdas" disabled selected>select tag</option>
-                <option value="asdasdas">sport</option>
-                <option value="asdasdas">football</option>
+            <select class="select-tag" name="dateto">
+                <option value="null" disabled selected>select tag</option>
+                <option value="sport">sport</option>
+                <option value="football">football</option>
             </select>
             <button class="filter-btn">submit</button>
         </form>
@@ -55,9 +56,11 @@
         <div class="cols col-3">
             <img src="img/bayern.png" alt="thumbnail">
             <div class="news-item-title">
-                <h1>Традиционное унижение "Гамбурга" на "Альянц арене"</h1>
+                <h1>Традиционное унижение "Гамбурга"</h1>
             </div>
-            <p class="news-item-description">Хороший подарок подарили футболисты «Баварии» Карло Анчелотти на тысячный матч в тренерской карьере. Мюнхенцы у себя дома просто-напросто унизили «Гамбург», отгрузив в его ворота восемь безответных мя...
+            <p class="news-item-description">Хороший подарок подарили футболисты «Баварии» Карло Анчелотти на тысячный
+                матч в тренерской карьере. Мюнхенцы у себя дома просто-напросто унизили «Гамбург», отгрузив в его ворота
+                восемь безответных мя...
             </p>
             <span class="content-item-read-btn"><a href="#">Read more...</a></span>
             <div class="content-item-author-date">
@@ -72,14 +75,22 @@
                 <span class="content-item-tag"> <a href="#">sport</a></span>
                 <span class="content-item-tag"> <a href="#">football</a></span>
                 <span class="content-item-tag"> <a href="#">CL</a></span>
+            </div>
+            <div class="edit-btns">
+                <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                <span><a href="#">edit</a></span>
+                <span class="fa fa-trash-o" aria-hidden="true"></span>
+                <span><a href="#">delete</a></span>
             </div>
         </div>
         <div class="cols col-3">
             <img src="img/juve.png" alt="thumbnail">
             <div class="news-item-title">
-                <h1>Туринская машина продолжает побеждать</h1>
+                <h1>Туринская машина побеждает снова</h1>
             </div>
-            <p class="news-item-description">Чемпионский экспресс «Ювентуса» следует от станции к станции по расписанию, без внеплановых остановок. Победа в домашнем матче над «Эмполи» стала для «Старой синьоры» уже седьмой подряд в чемпионате. ...
+            <p class="news-item-description">Чемпионский экспресс «Ювентуса» следует от станции к станции по расписанию,
+                без внеплановых остановок. Победа в домашнем матче над «Эмполи» стала для «Старой синьоры» уже седьмой
+                подряд в чемпионате. ...
             </p>
             <span class="content-item-read-btn"><a href="#">Read more...</a></span>
             <div class="content-item-author-date">
@@ -95,184 +106,254 @@
                 <span class="content-item-tag"> <a href="#">football</a></span>
                 <span class="content-item-tag"> <a href="#">CL</a></span>
             </div>
-        </div>
-        <div class="cols col-3">
-            <img src="img/mu.png" alt="thumbnail">
-            <div class="news-item-title">
-                <h1>"Манчестер юнайтед" и "Сельта" сыграют в России</h1>
-            </div>
-            <p class="news-item-description">Две российские команды сумели пробиться в 1/8 финала Лиги Европы. И вот в пятницу, 24 февраля, в швейцарском Ньоне состоялась жеребьёвка, которая определила соперников "Краснодара" и "Ростова". Команд...
-            </p>
-            <span class="content-item-read-btn"><a href="#">Read more...</a></span>
-            <div class="content-item-author-date">
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
+            <div class="edit-btns">
+                <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                <span><a href="#">edit</a></span>
+                <span class="fa fa-trash-o" aria-hidden="true"></span>
+                <span><a href="#">delete</a></span>
             </div>
         </div>
         <div class="cols col-3">
             <img src="img/bd.png" alt="thumbnail">
             <div class="news-item-title">
-                <h1>Дубль Обамеянга помог "Боруссии" разгромить "Фрайбург"</h1>
+                <h1>Дубль Обамеянга помог "Боруссии"</h1>
             </div>
-            <p class="news-item-description">Удивительно легко сложился для "Боруссии" гостевой поединок против "Фрайбурга". Команда Кристиана Штрайха обычно предстаёт в родных стенах весьма боевым коллективом, однако в матче с дортмундцами она ...
+            <p class="news-item-description">Удивительно легко сложился для "Боруссии" гостевой поединок против
+                "Фрайбурга". Команда Кристиана Штрайха обычно предстаёт в родных стенах весьма боевым коллективом,
+                однако в матче с дортмундцами она ...
                 <span class="content-item-read-btn"><a href="#">Read more...</a></span>
             <div class="content-item-author-date">
             </p>
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
-            </div>
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
         </div>
-        <div class="cols col-3">
-            <img src="img/chelsea.png" alt="thumbnail">
-            <div class="news-item-title">
-                <h1>Парад испанских голов в Лондоне</h1>
-            </div>
-            <p class="news-item-description">Чемпионская гонка в Англии в этот уик-энд не обострится. Так постановил «Челси», который в довольно непростом домашнем матче одолел «Суонси» и набрал дежурные три очка. Забивали в этой игре исключител...
-            </p>
-            <span class="content-item-read-btn"><a href="#">Read more...</a></span>
-            <div class="content-item-author-date">
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
-            </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
         </div>
-        <div class="cols col-3">
-            <img src="img/rb.png" alt="thumbnail">
-            <div class="news-item-title">
-                <h1>"Лейпциг" подавил гостей из Кельна</h1>
-            </div>
-            <p class="news-item-description">Кажется, «Лейпциг» уже начинает обретать определенный класс – признак большой опытной команды, чего не скажешь о «быках», глядя на их историю и состав. Но вот такое нынче немецкое чудо в Бундеслиге вы...
-            </p>
-            <span class="content-item-read-btn"><a href="#">Read more...</a></span>
-            <div class="content-item-author-date">
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
-            </div>
-        </div>
-        <div class="cols col-3">
-            <img src="img/rost.png" alt="thumbnail">
-            <div class="news-item-title">
-                <h1>Караваев лишил "Ростов" победы</h1>
-            </div>
-            <p class="news-item-description">Два разных тайма провели команды в ответном матче. Несмотря на то, что игра носила почти формальный характер – поверить в то, что «Спарта» отыграет четыре, было сложно – команды подошли к ней серьёзно...
-            </p>
-            <span class="content-item-read-btn"><a href="#">Read more...</a></span>
-            <div class="content-item-author-date">
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
-            </div>
-        </div>
-        <div class="cols col-3">
-            <img src="img/lester.png" alt="thumbnail">
-            <div class="news-item-title">
-                <h1>Почему «Лестер» должен вылететь из АПЛ. Навсегда</h1>
-            </div>
-            <p class="news-item-description">Год назад я наизусть выучил имя Вишай Шривадданапрабха. Правда. Я и сейчас могу выговорить его без помощи «Гугла». Теперь жалею об этом. И постараюсь его забыть. В начале августа «Лестер» продлил конт...
-            </p>
-            <span class="content-item-read-btn"><a href="#">Read more...</a></span>
-            <div class="content-item-author-date">
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
-            </div>
-        </div>
-        <div class="cols col-3">
-            <img src="img/fcb.png" alt="thumbnail">
-            <div class="news-item-title">
-                <h1>Убийственная геометрия «Баварии». Вся тактика Лиги чемпионов</h1>
-            </div>
-            <p class="news-item-description">План «Арсенала» на флангах обороны и ответ «Баварии». Мило писать такое после 1:5, но «Арсенал» тактически выдал сильный первый тайм, и катастрофа после перерыва вызвана не безграмотными схемами, а ме...
-            </p>
-            <span class="content-item-read-btn"><a href="#">Read more...</a></span>
-            <div class="content-item-author-date">
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
-            </div>
-        </div>
-        <div class="cols col-3">
-            <img src="img/arsen.png" alt="thumbnail">
-            <div class="news-item-title">
-                <h1>Даже не четвёртый. Почему Венгеру пора уйти из «Арсенала»</h1>
-            </div>
-            <p class="news-item-description">Венгеру нужен ещё как минимум год, чтобы его стратегия управления командой сработала и, возможно, принесла первый серьёзный титул за многие годы (Кубок и Суперкубок Англии не в счёт). Но у «Арсенала» ...
-            </p>
-            <span class="content-item-read-btn"><a href="#">Read more...</a></span>
-            <div class="content-item-author-date">
-                <span>BY&nbsp</span>
-                <span>AUTHOR</span>
-                <span>/</span>
-                <span>FEB 23, 2017</span>
-                <span>/</span>
-                <span>12:02AM</span>
-            </div>
-            <div class="content-item-tag-wrapper">
-                <span class="content-item-tag"> <a href="#">sport</a></span>
-                <span class="content-item-tag"> <a href="#">football</a></span>
-                <span class="content-item-tag"> <a href="#">CL</a></span>
-            </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
         </div>
     </div>
+    <div class="cols col-3">
+        <img src="img/mu.png" alt="thumbnail">
+        <div class="news-item-title">
+            <h1>"Манчестер юнайтед" и "Сельта" сыграют в России</h1>
+        </div>
+        <p class="news-item-description">Две российские команды сумели пробиться в 1/8 финала Лиги Европы. И вот в
+            пятницу, 24 февраля, в швейцарском Ньоне состоялась жеребьёвка, которая определила соперников
+            "Краснодара" и "Ростова". Команд...
+        </p>
+        <span class="content-item-read-btn"><a href="#">Read more...</a></span>
+        <div class="content-item-author-date">
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
+        </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
+        </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
+        </div>
+    </div>
+    <div class="cols col-3">
+        <img src="img/chelsea.png" alt="thumbnail">
+        <div class="news-item-title">
+            <h1>Парад испанских голов в Лондоне</h1>
+        </div>
+        <p class="news-item-description">Чемпионская гонка в Англии в этот уик-энд не обострится. Так постановил
+            «Челси», который в довольно непростом домашнем матче одолел «Суонси» и набрал дежурные три очка. Забивали в
+            этой игре исключител...
+        </p>
+        <span class="content-item-read-btn"><a href="#">Read more...</a></span>
+        <div class="content-item-author-date">
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
+        </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
+        </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
+        </div>
+    </div>
+    <div class="cols col-3">
+        <img src="img/rb.png" alt="thumbnail">
+        <div class="news-item-title">
+            <h1>"Лейпциг" подавил гостей из Кельна</h1>
+        </div>
+        <p class="news-item-description">Кажется, «Лейпциг» уже начинает обретать определенный класс – признак большой
+            опытной команды, чего не скажешь о «быках», глядя на их историю и состав. Но вот такое нынче немецкое чудо в
+            Бундеслиге вы...
+        </p>
+        <span class="content-item-read-btn"><a href="#">Read more...</a></span>
+        <div class="content-item-author-date">
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
+        </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
+        </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
+        </div>
+    </div>
+    <div class="cols col-3">
+        <img src="img/rost.png" alt="thumbnail">
+        <div class="news-item-title">
+            <h1>Караваев лишил "Ростов" победы</h1>
+        </div>
+        <p class="news-item-description">Два разных тайма провели команды в ответном матче. Несмотря на то, что игра
+            носила почти формальный характер – поверить в то, что «Спарта» отыграет четыре, было сложно – команды
+            подошли к ней серьёзно...
+        </p>
+        <span class="content-item-read-btn"><a href="#">Read more...</a></span>
+        <div class="content-item-author-date">
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
+        </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
+        </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
+        </div>
+    </div>
+    <div class="cols col-3">
+        <img src="img/lester.png" alt="thumbnail">
+        <div class="news-item-title">
+            <h1>Почему «Лестер» должен вылететь из АПЛ. Навсегда</h1>
+        </div>
+        <p class="news-item-description">Год назад я наизусть выучил имя Вишай Шривадданапрабха. Правда. Я и сейчас могу
+            выговорить его без помощи «Гугла». Теперь жалею об этом. И постараюсь его забыть. В начале августа «Лестер»
+            продлил конт...
+        </p>
+        <span class="content-item-read-btn"><a href="#">Read more...</a></span>
+        <div class="content-item-author-date">
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
+        </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
+        </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
+        </div>
+    </div>
+    <div class="cols col-3">
+        <img src="img/fcb.png" alt="thumbnail">
+        <div class="news-item-title">
+            <h1>Убийственная геометрия «Баварии». Вся тактика Лиги чемпионов</h1>
+        </div>
+        <p class="news-item-description">План «Арсенала» на флангах обороны и ответ «Баварии». Мило писать такое после
+            1:5, но «Арсенал» тактически выдал сильный первый тайм, и катастрофа после перерыва вызвана не безграмотными
+            схемами, а ме...
+        </p>
+        <span class="content-item-read-btn"><a href="#">Read more...</a></span>
+        <div class="content-item-author-date">
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
+        </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
+        </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
+        </div>
+    </div>
+    <div class="cols col-3">
+        <img src="img/arsen.png" alt="thumbnail">
+        <div class="news-item-title">
+            <h1>Даже не четвёртый. Почему Венгеру пора уйти из «Арсенала»</h1>
+        </div>
+        <p class="news-item-description">Венгеру нужен ещё как минимум год, чтобы его стратегия управления командой
+            сработала и, возможно, принесла первый серьёзный титул за многие годы (Кубок и Суперкубок Англии не в счёт).
+            Но у «Арсенала» ...
+        </p>
+        <span class="content-item-read-btn"><a href="#">Read more...</a></span>
+        <div class="content-item-author-date">
+            <span>BY&nbsp</span>
+            <span>AUTHOR</span>
+            <span>/</span>
+            <span>FEB 23, 2017</span>
+            <span>/</span>
+            <span>12:02AM</span>
+        </div>
+        <div class="content-item-tag-wrapper">
+            <span class="content-item-tag"> <a href="#">sport</a></span>
+            <span class="content-item-tag"> <a href="#">football</a></span>
+            <span class="content-item-tag"> <a href="#">CL</a></span>
+        </div>
+        <div class="edit-btns">
+            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+            <span><a href="#">edit</a></span>
+            <span class="fa fa-trash-o" aria-hidden="true"></span>
+            <span><a href="#">delete</a></span>
+        </div>
+    </div>
+</div>
 </div>
 <div class="pagination">
     <ul>
