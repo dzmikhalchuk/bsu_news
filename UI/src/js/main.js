@@ -448,6 +448,52 @@ var articles = [
     }
 ];
 
+var tags = [
+    {
+        id: 1,
+        name: 'sport'
+    },
+    {
+        id: 2,
+        name: 'football'
+    },
+    {
+        id: 3,
+        name: 'germany'
+    },
+    {
+        id: 4,
+        name: 'germany'
+    },
+    {
+        id: 5,
+        name: 'england'
+    },
+    {
+        id: 6,
+        name: 'champions league'
+    },
+    {
+        id: 7,
+        name: 'europa league'
+    }
+];
+
+var addTag = function (name) {
+    if (findIndexByProperty(tags, 'name', name) === -1) {
+        var maxId = tags[tags.length - 1].id;
+
+        tags.push({
+            id: maxId + 1,
+            name: name
+        });
+
+        return true;
+    }
+
+    return false;
+};
+
 var getArticles = function (skip, top, filterConfig) {
     var tempArray,
         authorName = filterConfig.authorName,
@@ -482,11 +528,6 @@ var getArticles = function (skip, top, filterConfig) {
     return tempArray.slice(skip, top);
 };
 
-var filterConfig = {
-    tags: [],
-    authorName: ''
-};
-
 var getArticleById = function (id) {
     var expectedArticle = null;
     articles.forEach(function (article) {
@@ -498,10 +539,16 @@ var getArticleById = function (id) {
 };
 
 var validateArticle = function (article) {
-    return article.id && (article.title && article.title.length < 100) && (article.summary
+    var validArticleData = article.id && (article.title && article.title.length < 100) && (article.summary
         && article.summary.length < 200) && article.createdAt && (article.author && article.author.length > 0)
-        && (article.content && article.content.length > 0) && article.imgUrl && (article.tag
-        && article.tag.length > 0);
+        && (article.content && article.content.length > 0) && article.imgUrl;
+
+    var validTagData = article.tag && article.tag.length > 0 &&
+            article.tag.every(function (articleTag) {
+                return findIndexByProperty(tags, 'name', articleTag.name) >= 0;
+            });
+
+    return validArticleData && validTagData;
 };
 
 var addArticle = function (article) {
